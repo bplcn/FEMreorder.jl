@@ -10,7 +10,7 @@ The function reorder the ID of nodes and elements of an .inp file.
     NodeDict_new = Dict();
     nodeIDArray_new = collect(keys(Nodenew2oldDict));
     for nodeIDnew in nodeIDArray_new
-        nodeIDold = Nodeold2newDict[nodeIDnew];
+        nodeIDold = Nodenew2oldDict[nodeIDnew];
         NodeDict_new[nodeIDnew] = NodeDict[nodeIDold];
     end
 
